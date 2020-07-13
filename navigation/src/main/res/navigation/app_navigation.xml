@@ -28,9 +28,9 @@
             android:defaultValue="defaultUsername"
             app:argType="string" />
         <argument
-            android:name="password"
-            android:defaultValue="defaultPassword"
-            app:argType="string" />
+            android:name="by.vladislavpopkov.practice.Coin"
+            app:nullable="true"
+            app:argType="by.vladislavpopkov.practice.Coin" />
         <action
             android:id="@+id/action_loginFragment_to_signupFragment"
             app:destination="@id/signupFragment"

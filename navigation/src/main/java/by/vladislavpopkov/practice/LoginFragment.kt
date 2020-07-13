@@ -45,8 +45,8 @@ class LoginFragment : Fragment() {
 //        login.text = arguments?.getString("username")
 //        val string = arguments?.getString("password")
 //        password.text = string
+        password.text = LoginFragmentArgs.fromBundle(requireArguments()).byVladislavpopkovPracticeCoin?.num.toString()
         login.text = LoginFragmentArgs.fromBundle(requireArguments()).username
-        password.text = LoginFragmentArgs.fromBundle(requireArguments()).password
         toSignUp.setOnClickListener { toSignUp(it) }
     }
 

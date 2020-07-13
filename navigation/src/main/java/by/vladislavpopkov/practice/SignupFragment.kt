@@ -49,8 +49,7 @@ class SignupFragment : Fragment() {
 
     private fun onGotoLogin(v: View) {
         val action = SignupFragmentDirections.actionSignupFragmentToLoginFragment(
-            signupUsername.text.toString(),
-            signupPassword.text.toString()
+            "asda", Coin(1)
         )
         Navigation.findNavController(v)
             .navigate(action)
