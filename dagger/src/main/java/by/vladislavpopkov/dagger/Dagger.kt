@@ -1,32 +1,19 @@
 package by.vladislavpopkov.dagger
 
+import android.content.Context
 import javax.inject.Inject
 
 
-class Car @Inject constructor(private var engine: Engine) {
-    init {
-        println("Car")
-    }
+class Car @Inject constructor(private var engine: Engine, var context: Context) {
+    val fuelType = engine.fuelType
 }
 
 class Engine @Inject constructor(private var fuel: Fuel) {
-    init {
-        println("Engine")
-    }
+    val fuelType = fuel.fuelData.fuelType
 }
 
-class Fuel @Inject constructor() {
-    init {
-        println("Fuel")
-    }
-
-    private val fuelType = if (BuildConfig.DEBUG) {
-        "benzine"
-    } else {
-        "diesel"
-    }
+class Fuel @Inject constructor(val fuelData: FuelDataInt) {
 }
 
-fun main() {
-    val car: Car = DaggerDaggerComponent.create().getCar()
+data class FuelData(override val fuelType: String) : FuelDataInt {
 }
