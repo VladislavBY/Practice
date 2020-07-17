@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        DaggerApplicationComponent.factory().create(this).inject(this)
+        (application as MyApplication).appComponent.inject(this)
         hello.setText(car.fuelType)
-
     }
 }
