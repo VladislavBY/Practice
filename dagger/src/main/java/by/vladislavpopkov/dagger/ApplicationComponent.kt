@@ -6,7 +6,9 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
+@Singleton
 @Component (modules = [FuelTypeModule::class])
 interface ApplicationComponent {
     fun getCar(): Car

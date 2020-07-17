@@ -2,8 +2,9 @@ package by.vladislavpopkov.dagger
 
 import android.content.Context
 import javax.inject.Inject
+import javax.inject.Singleton
 
-
+@Singleton
 class Car @Inject constructor(private var engine: Engine, var context: Context) {
     val fuelType = engine.fuelType
 }
