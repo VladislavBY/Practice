@@ -9,11 +9,14 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Singleton
-@Component (modules = [FuelTypeModule::class])
+@Component(modules = [FuelTypeModule::class, AppSubcomponents::class])
 interface ApplicationComponent {
     fun getCar(): Car
     fun getEngine(): Engine
     fun getFuel(): Fuel
+
+    fun getSubComponent(): SubComponent.Factory
+    fun getSecondSubComponent(): SecondSubComponent.Factory
 
     fun inject(activity: MainActivity)
 

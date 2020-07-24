@@ -1,3 +1,4 @@
 rootProject.name='Practice'
 include ':navigation'
 include ':dagger'
+include ':rx'
