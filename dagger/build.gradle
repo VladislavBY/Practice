@@ -14,7 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "by.vladislavpopkov.dagger.dagger.MyCustomTestRunner"
     }
 
     buildTypes {
@@ -38,4 +38,5 @@ dependencies {
 
     implementation 'com.google.dagger:dagger:2.28.2'
     kapt 'com.google.dagger:dagger-compiler:2.28.2'
+    kaptAndroidTest "com.google.dagger:dagger-compiler:2.28.2"
 }

@@ -9,6 +9,9 @@ import android.app.Application
 open class MyApplication : Application() {
 
     val appComponent: ApplicationComponent by lazy {
-        DaggerApplicationComponent.factory().create(applicationContext)
+        initializeComponent()
     }
+
+    open fun initializeComponent() =
+        DaggerApplicationComponent.factory().create(applicationContext)
 }
