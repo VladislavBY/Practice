@@ -15,7 +15,6 @@ data class Test(val a: Int)
 
 fun main() {
     t()
-    println("test revert commit")
 }
 
 private fun t() {
