@@ -1,3 +1,6 @@
+include ':toolbarcentre'
+include ':androidbottomsheet'
+include ':test'
 rootProject.name='Practice'
 include ':navigation'
 include ':dagger'

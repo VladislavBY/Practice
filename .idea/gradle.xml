@@ -10,9 +10,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidbottomsheet" />
             <option value="$PROJECT_DIR$/dagger" />
             <option value="$PROJECT_DIR$/navigation" />
             <option value="$PROJECT_DIR$/rx" />
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/toolbarcentre" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
