@@ -9,6 +9,7 @@ fun main() {
     println("main2")
     println("main3")
     println("main4")
+    println("second1")
 
 
 }
